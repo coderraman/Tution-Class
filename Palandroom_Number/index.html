@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PalinDroom_Number</title>
+  </head>
+  <body>
+    <script>
+      let Num = 12521;
+      let rev = 0;
+      let originalNum = Num;
+      while (Num !== 0) {
+        rev = rev * 10 + (Num % 10);
+        Num = Math.floor(Num / 10);
+      }
+      if (originalNum == rev) {
+        console.log("This is Palindroom Number" + " " + rev);
+      } else {
+        console.log("This is not palindroom" + " " + rev);
+      }
+    </script>
+  </body>
+</html>
