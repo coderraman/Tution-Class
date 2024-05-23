@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reverse_Num</title>
+  </head>
+  <body>
+    <script>
+      // Reverse Number with While loop____****_______
+      //   let Num = 12345;
+      //   let rev = 0;
+      //   while (Num !== 0) {
+      //     rev = rev * 10 + (Num % 10);
+      //     Num = Math.floor(Num / 10);
+      //   }
+      //   console.log(rev);
+
+      // Print first and last Number_______****_______
+      let Num = 1234;
+      let firstnum = Num;
+      let lastNum;
+
+      lastNum = Num % 10;
+      while (firstnum >= 10) {
+        firstnum = Math.floor(firstnum / 10);
+      }
+      console.log("Original Num is" + " " + Num);
+      console.log("First Digiti" + " " + firstnum);
+      console.log("Last Digiti" + " " + lastNum);
+    </script>
+  </body>
+</html>
