@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Prime Num</title>
+  </head>
+  <body>
+    <input type="number" id="Primenum" placeholder="Enter Number" />
+    <button onclick="Add()">Check</button>
+
+    <script>
+    function Add(){
+      let outPut = document.getElementById("Primenum").value;
+      let isPrime;
+
+      for(let i = 2; i<=outPut; i++){
+        isPrime=1;
+
+        for(let j = 2; j<=i/2; j++){
+          if(i%j==0){
+            isPrime=0;
+            break;
+          }
+        }
+
+        if(isPrime==1){
+          document.write("The Prime Number is "+ i + "<br>")
+        }
+      }
+    }
+    </script>
+  </body>
+</html>
