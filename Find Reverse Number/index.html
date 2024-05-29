@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reverse Number</title>
+  </head>
+  <body>
+    <input type="number" maxlength="4" placeholder="EnterNum" id="value" />
+    <button onclick="Add()">Check</button>
+    <script>
+      function Add() {
+        let Num = document.getElementById("value").value;
+        let reverseNum = 0;
+        while (Num !== 0) {
+          reverseNum = reverseNum * 10 + (Num % 10);
+          Num = Math.floor(Num / 10);
+        }
+        document.write(reverseNum);
+      }
+    </script>
+  </body>
+</html>

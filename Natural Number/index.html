@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Natural number</title>
+  </head>
+  <body>
+    <input type="number" id="NaturaNUm" placeholder="Enter Your Number" />
+    <button onclick="Add()">Check</button>
+    <script>
+      function Add() {
+        let sum = 0;
+        let NaturaNUm = document.getElementById("NaturaNUm").value;
+        for (let i = 1; i <= NaturaNUm; i++) {
+          document.write(i + "<br>");
+          sum = sum + i;
+        }
+        document.write("<br>"+"The sum of Whole Numbers is" + " " + sum)
+      }
+      Add();
+    </script>
+  </body>
+</html>

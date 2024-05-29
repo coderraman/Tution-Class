@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Break and Continue</title>
+  </head>
+  <body>
+    <script>
+      // Break__________*****___________
+      //   function searchNumber(array, target) {
+      //     for (let i = 0; i < array.length; i++) {
+      //       if (array[i] === target) {
+      //         console.log("Number found!");
+      //         break;
+      //       }
+      //       if (i === array.length - 1) {
+      //         console.log("Number not found!");
+      //       }
+      //     }
+      //   }
+
+      //   // Example usage:
+      //   const numbers = [1, 2, 3, 4, 5];
+      //   searchNumber(numbers, 3); // Output: "Number found!"
+      //   searchNumber(numbers, 6); // Output: "Number not found!"
+
+      function search(array, target) {
+        for (let i = 0; i < array.length; i++) {
+          if (array[i] === target) {
+            console.log("Number Found");
+            break;
+          }
+          if(i===array.length-1){
+            console.log("Number is not Found");
+          }
+        }
+      }
+      const Num = [1, 2, 3, 4, 5];
+      search(Num, 4);
+    </script>
+  </body>
+</html>

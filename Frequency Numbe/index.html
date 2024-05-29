@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find the Frequency of the Numbers</title>
+  </head>
+  <body>
+    <script>
+      let Num = 13168498502;
+      let N = Num;
+      let Frequ = [];
+      let base = 10;
+      for (let i = 0; i <= 10; i++) {
+        Frequ[i] = 0;
+      }
+      while (Num !== 0) {
+        let LastDigit = Num % 10;
+        Num = Math.floor(Num / 10);
+        Frequ[LastDigit]++;
+      }
+      document.write("Frequancy of each digit in " + N + "<br>");
+      for (let i = 0; i < base; i++) {
+        document.write("Frequancy of " + i + "=" + Frequ[i] +"<br>");
+      }
+    </script>
+  </body>
+</html>

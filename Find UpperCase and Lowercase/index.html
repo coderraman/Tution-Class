@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UpperCase and lowerCase</title>
+  </head>
+  <body>
+    <input
+      type="text"
+      id="UL_case"
+      placeholder="Enter your word"
+      maxlength="6"
+    />
+    <button onclick="Add()">Check</button>
+    <script>
+      function Add() {
+        let UL_case = document.getElementById("UL_case").value;
+        document.getElementById("UL_case").value = "";
+        let res = UL_case;
+        if (UL_case == res.toUpperCase()) {
+          document.write("UpperCase");
+        } else if (UL_case == res.toLowerCase()) {
+          document.write("LowerCase");
+        } else if (UL_case == res.toUpperCase() || res.toLowerCase()) {
+          document.write("String");
+        } else if (UL_case == res.Number()) {
+          document.write("Number");
+        } else {
+          document.write("Something is wrong");
+        }
+      }
+    </script>
+  </body>
+</html>
