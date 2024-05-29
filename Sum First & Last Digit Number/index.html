@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sum First & Last Digit Number</title>
+  </head>
+  <body>
+    <script>
+      let Num = 123456;
+      let FirstDigit;
+      let lastDigit = Num % 10;
+      let len = Num.toString().length - 1;
+      FirstDigit = Math.floor(Num / Math.pow(10, len));
+      let sum = FirstDigit + lastDigit;
+      document.write("The Original Value is " + Num + "<br>")
+      document.write("The FirstDigit is "+ FirstDigit + "<br>")
+      document.write("The LastDigit is "+ lastDigit + "<br>");
+      document.write("The sum of Both is " + sum);
+
+    </script>
+  </body>
+</html>
