@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Print Odd and Even Number</title>
+  </head>
+  <body>
+    <input type="number" maxlength="4 " placeholder="Enter number" id="Value" />
+    <button onclick="Add()">Check</button>
+    <script>
+      function Add() {
+        let EvenNum = document.getElementById("Value").value;
+        for (let i = 1; i <= EvenNum; i++) {
+          if (i % 2 !== 0) {
+            document.write("The Odd Number is " + i + "<br>");
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

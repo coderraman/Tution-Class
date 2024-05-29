@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meter to killometer</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        margin-top: 3%;
+        margin-left: 2%;
+      }
+      button {
+        cursor: pointer;
+        background-color: purple;
+        color: white;
+        outline: none;
+        border: none;
+        border-radius: 7px;
+        padding: 14px;
+      }
+      input {
+        padding: 13px;
+        font-size: 1.1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Html -->
+    <h1>Convert Centimeter to meter and killometer</h1>
+    <input type="text" id="Inputtext" placeholder="Enter Here.." />
+    <button onclick="Add()">Click to Check</button>
+    <p id="Result"></p>
+    <script>
+      function Add() {
+        let Inputtext = document.querySelector("#Inputtext").value;
+        let Meter = Inputtext / 100;
+        let killometer = Inputtext / 100000;
+        document.querySelector("#Result").innerHTML =
+          "Value is" +
+          " " +
+          Meter +
+          " " +
+          " Meter" +
+          " " +
+          "and" +
+          " " +
+          killometer +
+          " " +
+          "killometer";
+        document.querySelector("#Inputtext").value = "";
+      }
+      Add();
+    </script>
+  </body>
+</html>
