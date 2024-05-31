@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object in JavaScript</title>
+  </head>
+  <body>
+    <script>
+      // Object___________*************_________  ________________  _____________
+      //   let Name = {
+      //     Student: "Raman",
+      //     Id: 4125,
+      //     Course: "AI Genrator",
+      //   };
+      //   let Add = {
+      //     Pata: {
+      //       SmallPata: "Abc",
+      //       BigPata: "ABcdefghijklmnop",
+      //     },
+      //     FirstAdd: "Alipur",
+      //     LasAdd: "Delhi",
+      //   };
+      //   console.log(Add.FirstAdd);
+
+      // Sum in Object_______****______   ___________  ___________
+      let Sum = {
+        c: function () {
+          let Num = +prompt("Enter Number");
+          let Num1 = +prompt("Enter Second Number");
+          return Num + Num1;
+        },
+      };
+      document.write(Sum.c());
+
+      //   PrimeNUmber in Object_______****______   ___________  ___________
+      //   let Prime = {
+      //     PrimeFunc: function () {
+      //       let Num = 20;
+      //       let isprime;
+      //       for (let i = 2; i <= Num; i++) {
+      //         isprime = 1;
+
+      //         for (let j = 2; j <= i / 2; j++) {
+      //           if (i % j === 0) {
+      //             isprime = 0;
+      //             break;
+      //           }
+      //         }
+      //         if (isprime === 1) {
+      //           document.write("The Prime number is " + i + "<br>");
+      //         }
+      //       }
+      //     },
+      //   };
+      //   console.log(Prime.PrimeFunc());
+
+      //   Sum of all PrimeNUmber  in Object_______****______   ___________  ___________
+      // let Sum = {
+      //   PrimeSum: function () {
+      //     let sum = 0;;
+      //     let isprime;
+      //     let Num = +prompt("Enter the Number");
+
+      //     for (let i = 2; i <= Num; i++) {
+      //       isprime = 1;
+
+      //       for (let j = 2; j <= i / 2; j++) {
+      //         if (i % j == 0) {
+      //           isprime = 0;
+      //           break;
+      //         }
+      //       }
+
+      //       if (isprime == 1) {
+      //         sum = sum + i;
+      //         document.write("The Prime Number is " + i + "<br>");
+      //       }
+      //     }
+      //     document.write("The sum of all prime Number is " + sum + "<br>");
+      //   },
+      // };
+      // console.log(Sum.PrimeSum());
+    </script>
+  </body>
+</html>
